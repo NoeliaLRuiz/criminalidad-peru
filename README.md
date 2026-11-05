@@ -6,7 +6,7 @@
 
 | | |
 |---|---|
-| 📊 Dashboard | https://noelialruiz.github.io/Python_intermedio_2026/tarea_3/web/ |
+| 📊 Dashboard | https://noelialruiz.github.io/criminalidad-peru/web/ |
 | 🎬 Reel | [`reel/reel.mp4`](reel/reel.mp4) (66 s, vertical 1080 × 1920) |
 | 💼 LinkedIn | https://www.linkedin.com/feed/update/urn:li:ugcPost:7522718489015476224/ |
 
@@ -68,7 +68,7 @@ El archivo [`datos/originales/fuentes.json`](datos/originales/fuentes.json) guar
 **1. Datos y análisis**
 
 ```powershell
-cd tarea_3
+cd criminalidad-peru
 uv venv --python 3.12
 .venv\Scripts\activate
 uv pip install -r requirements.txt
@@ -96,7 +96,7 @@ Mi grabación (`reel/mi_voz.*`) no está en el repositorio: con ella cualquiera 
 ## Estructura
 
 ```text
-tarea_3/
+criminalidad-peru/
 ├── README.md
 ├── requirements.txt          # datos y análisis
 ├── scripts/                  # obtener, procesar y analizar los datos

@@ -1,6 +1,6 @@
 """Paso 2 del reel: tu voz con Qwen3-TTS, subtítulos con Whisper, música de fondo y video con Pillow + ffmpeg.
 
-Adaptado del reel de la sesión 15 (práctica/reel-incendios). Uso, desde la carpeta tarea_3:
+Adaptado del reel de la sesión 15 (repositorio reel-incendios). Uso, desde la carpeta principal del repositorio:
     python reel/hacer_reel.py --voz reel/mi_voz.ogg --autor "Tu nombre"
 
 Salidas en reel/: reel.mp4 (1080 x 1920, 30 fps, H.264 + AAC), subtitulos.srt y portada.png.
@@ -436,7 +436,7 @@ def main():
     p.add_argument("--texto-voz", help="lo que dices en la grabación, palabra por palabra (si Whisper se equivoca)")
     p.add_argument("--musica", default=str(AQUI / "recursos" / "musica.mp3"))
     p.add_argument("--credito-musica", default="«Lightless Dawn», Kevin MacLeod (incompetech.com), CC BY 4.0")
-    p.add_argument("--url", default="noelialruiz.github.io/Python_intermedio_2026/tarea_3/web")
+    p.add_argument("--url", default="noelialruiz.github.io/criminalidad-peru/web")
     p.add_argument("--tts", default="Qwen/Qwen3-TTS-12Hz-0.6B-Base")
     p.add_argument("--whisper", default="small")
     a = p.parse_args()

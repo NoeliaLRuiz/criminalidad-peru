@@ -6,7 +6,7 @@
 3. Portada: una captura real del dashboard (título e indicadores) → reel/recursos/graficos/portada.png
 4. Música: los primeros 90 segundos de «Lightless Dawn» (Kevin MacLeod, CC BY 4.0) → reel/recursos/musica.mp3
 
-Uso, desde la carpeta tarea_3:  python reel/recursos.py
+Uso, desde la carpeta principal del repositorio:  python reel/recursos.py
 """
 import functools
 import http.server
@@ -60,7 +60,7 @@ class Silencioso(http.server.SimpleHTTPRequestHandler):
 
 
 def servidor_local():
-    """Sirve la carpeta tarea_3 en http://localhost:<puerto> (el navegador necesita un servidor para leer los datos)."""
+    """Sirve la carpeta principal del repositorio en http://localhost:<puerto> (el navegador necesita un servidor para leer los datos)."""
     manejador = functools.partial(Silencioso, directory=str(TAREA))
     servidor = http.server.ThreadingHTTPServer(("localhost", 0), manejador)
     threading.Thread(target=servidor.serve_forever, daemon=True).start()
